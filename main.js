@@ -8,8 +8,6 @@ async function getDados() {
 
     const pegueiDados = JSON.parse(JSON.stringify(response));
 
-
-
 }
 
 getDados();
