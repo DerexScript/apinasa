@@ -1,6 +1,6 @@
 // Request api da NASA
 
-const url = "https://cors-anywhere.herokuapp.com/corsdemo/http://api.open-notify.org/astros.json";
+const url = "https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json";
 const headers = {
     headers: { Origin: window.location.host }
   }
