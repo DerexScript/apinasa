@@ -1,13 +1,14 @@
 // Request api da NASA
 
 const url = "http://api.open-notify.org/astros.json";
+const headers = {
+    headers: { Origin: window.location.host }
+  }
 
 async function getDados() {
-    const dados = await fetch(url);
+    const dados = await fetch(url, headers);
     const response = await dados.json();
-
-    const pegueiDados = JSON.parse(JSON.stringify(response));
-
+    console.log(response);
 }
 
 getDados();
